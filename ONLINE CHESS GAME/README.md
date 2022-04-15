@@ -18,6 +18,6 @@
 
 ---
 
->**WEB APPLICATION - https://onlinechess-game.herokuapp.com**
+>**WEB APPLICATION - https://chess723.herokuapp.com/**
 
 ![image](https://user-images.githubusercontent.com/54937357/160670075-ec91172a-fcf4-4bed-b8f9-c5b98ab65a6e.png)
