@@ -11,6 +11,7 @@ const multiPlayerEl = document.getElementById('multiPlayer');
 const totalRoomsEl = document.getElementById('rooms')
 const totalPlayersEl = document.getElementById('players')
 const chatContentEl = document.getElementById('chatContent')
+const back = document.getElementById('back')
 var config = {};
 var board = null;
 var game = new Chess()
@@ -85,6 +86,12 @@ function onDrop2(source, target) {
 function onSnapEnd2() {
     board.position(game.fen())
 }
+
+$(".back").click(function () {
+    document.getElementById('gameMode').style.display = null;
+    document.querySelector('#chessGame').style.display =  "none";
+});
+
 
 singlePlayerEl.addEventListener('click', (e) => {
     e.preventDefault();

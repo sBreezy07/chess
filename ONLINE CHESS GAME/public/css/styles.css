@@ -11,7 +11,20 @@ body {
     overflow: visible;
     display:flex; 
     flex-direction:column; 
+    
 }
+.name{
+    font-size: xx-large; 
+font-family: 'Times New Roman', Times, serif;
+color: transparent;
+background: #000000;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+
+
  #singlePlayer, #multiPlayer, #joinButton{
     margin: 10px;
     width: 300px;
@@ -22,6 +35,7 @@ body {
  #gameMode, #joinFormDiv{
     padding: 10px; 
     margin-top: 8%;
+    
  }
 
  .black-3c85d {
@@ -72,3 +86,257 @@ body {
     border-radius: 5px;
     float : left;    
 }
+
+/* From uiverse.io by @Jedi-hongbin */
+button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    margin-top: 16px;
+   }
+   
+   button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   button:hover {
+    box-shadow: 9px 9px 5px #060606;
+    transform: translateY(-2px);
+   }
+
+   /* From uiverse.io by @nikk7007 */
+ /* grey*/
+ #grey_board {
+    --color: #767676;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   #grey_board::before, #grey_board::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   #grey_board::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   #grey_board::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   #grey_board:hover::before, #grey_board:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   #grey_board:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   #grey_board:active {
+    filter: brightness(.8);
+   }
+ /* green*/
+#green_board {
+    --color: rgb(88, 172, 138);
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   #green_board::before, #green_board::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   #green_board::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   #green_board::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   #green_board:hover::before, #green_board:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   #green_board:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   #green_board:active {
+    filter: brightness(.8);
+   }
+
+/* blue*/
+   #blue_board {
+    --color: rgb(114, 127, 162);
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   #blue_board::before, #blue_board::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   #blue_board::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   #blue_board::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   #blue_board:hover::before, #blue_board:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   #blue_board:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   #blue_board:active {
+    filter: brightness(.8);
+   }
+
+   /* orange*/
+   #orange_board {
+    --color: rgb(209, 139, 71);
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   #orange_board::before, #orange_board::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   #orange_board::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   #orange_board::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   #orange_board:hover::before, #orange_board:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   #orange_board:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   #orange_board:active {
+    filter: brightness(.8);
+   }
